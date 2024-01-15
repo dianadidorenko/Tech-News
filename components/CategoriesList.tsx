@@ -22,6 +22,7 @@ export default async function CategoriesList() {
       {categories &&
         categories.map((category) => (
           <Link
+            key={category.id}
             href={`/categories/${category.catName}`}
             className="px-3 py-1 rounded-md bg-slate-800 text-white cursor-pointer"
           >
