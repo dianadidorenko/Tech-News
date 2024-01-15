@@ -1,7 +1,7 @@
 import EditPostForm from "@/components/EditPostForm";
 import { TPost } from "@/app/types";
 import { getServerSession } from "next-auth/next";
-import { authOptions } from "@/app/api/auth/[...nextauth]/route";
+import authOptions from "@/utils/options";
 import { redirect } from "next/navigation";
 
 const getPost = async (id: string): Promise<TPost | null> => {
